@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="" content="">
+  <title>Ace Studios</title>
+  <link rel="stylesheet" href="./font/css/all.css">
+  <link rel="stylesheet" href="./css/cs.css" type="text/css" media="all" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+</head>
+
+<body>
+  <div id="loading">
+    <div class="progress">
+      <div class="progressbar">
+        <div class="pv"></div>
+      </div>
+    </div>
+  </div>
+  <canvas id="can1"></canvas>
+  <div id="lnav">
+    <div>
+      <i class="fab fa-superpowers"></i>
+      Ace Studios
+    </div>
+    <div class="navl">
+      <!--links-->
+    </div>
+  </div>
+
+
+  <div id="nav">
+    <div>
+      <i class="fab fa-superpowers"></i>
+      Ace Studios
+    </div>
+    <div onclick="nav(this)">
+      <span class="na1"></span>
+      <span class="na2"></span>
+    </div>
+    <div id="navc">
+      <div>
+        <!--links-->
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="k1">
+    <div>
+      <div>
+        Hello!
+      </div>
+      <div>
+        Here at Ace Studios
+      </div>
+      <div>
+        we&nbsp;<span id="lst"></span>
+      </div>
+      <div>
+        I use animation as a third dimension by which to simplify experiences and kuiding thro each and every interaction. I’m not adding motion just to spruce things up, but doing it in ways that.
+      </div>
+      <div>
+        <a href="#cont">Hire us</a>
+        <a href="#k2">View skills</a>
+      </div>
+    </div>
+    <div>
+      <canvas id="orb"></canvas>
+    </div>
+  </div>
+
+
+  <div id="k2">
+    <div>-- Skills --</div>
+    <div>Services i offer</div>
+    <div>
+      <!--services-->
+    </div>
+  </div>
+  
+  
+  <div id="k3">
+    <div>Meet the Team</div>
+    <div>
+      <!--team-->
+    </div>
+  </div>
+  
+  <div id="vad"></div>
+  
+  
+  <div class="k4">
+    <div>
+    <div>--Web 3.0--</div>
+    <div>Blockchain Technology</div>
+    <div>Unlock the future with our cutting-edge Web3.0 skills! Elevate your digital presence with seamless integration of decentralized technologies, smart contracts, and immersive user experiences be it Ethereum, Sol or Bsc. Let's build a blockchain-powered future together.</div>
+  </div>
+    <canvas id="bitc"></canvas>
+  </div>
+  
+  
+  <div class="k4">
+    <div>
+    <div>--DevOps--</div>
+    <div>Android Development</div>
+    <div>Ready to embark on an Android development journey that transcends expectations? Let's transform your ideas into mobile marvels. we bring a wealth of expertise in Android development, crafting cutting-edge applications that seamlessly blend functionality and aesthetics. UI/UX design for captivating visuals. Integration with RESTful APIs. Expertise in third-party libraries and frameworks. Thorough testing for robust performance.</div>
+  </div>
+    <canvas id="and"></canvas>
+  </div>
+  
+  
+  <div class="k4">
+    <div>
+    <div>--Programming--</div>
+    <div>Native Programming</div>
+    <div>Ready to take your Java projects to new heights? Reach out today, and let's discuss how our Java skills can contribute to the success of your next venture ranging from enterprise-level applications to innovative startups, consistently exceeding client expectations.</div>
+  </div>
+    <canvas id="lap"></canvas>
+  </div>
+  
+  
+    <div id="k5">
+      <div>
+        --Array of Projects--
+      </div>
+      <div>
+        View our recent projects
+      </div>
+      <div>
+        <i class="prev fa fa-angle-left fa-4x"></i>
+        <i class="nxt fa fa-angle-right fa-4x"></i>
+        <div id="caur">
+        </div>
+      </div>
+      <div>
+
+      </div>
+    </div>
+    
+    
+  <div class="k4" id="cont">
+    <div>
+    <div>--Contact us--</div>
+    <div>Reach out to the team</div>
+    <div>Are you minding a project? Are you looking to start one or need assistance in finishing a project? Reach out to us via these social links.</div>
+    <div id="lnks"></div>
+  </div>
+    <canvas id="fir"></canvas>
+  </div>
+  
+  <div id="foot">
+    &copy; <a href="index.html">Ace studios</a> <span></span>
+  </div>
+    
+    
+
+
+  <script async src="./js/main.js" type="text/javascript" charset="utf-8"></script>
+
+  <script async src="./js/anim.js" type="module" charset="utf-8"></script>
+  <script type="module">
+  
+    import {
+      orb, bitc, and, lap, cont
+    } from "./js/anim.js";
+    orb();
+    bitc();
+    and();
+    lap();
+    cont();
+  </script>
+</body>
+
+</html>
