@@ -16,6 +16,18 @@ body, html {
 #497B60
 */
 
+
+div::-webkit-scrollbar, a::-webkit-scrollbar {
+    display: none;
+}
+
+
+div, a {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+
 #loading {
   position: fixed;
   top: 0;
