@@ -118,6 +118,9 @@ a {
     display: none !important;
   }
   
+  #k1 {
+    margin-block: 5em !important;
+  }
   
   #vad>div {
     width: 450px;
