@@ -1,14 +1,15 @@
     
-var bn = JSON.parse('{"x" : [["HOME", "index.html"],["SKILLS", "#k2"], ["CONTACT", "cont"], ["TEAM", "#k3"]]}');
+var bn = [["HOME", "index.html"],["SKILLS", "#k2"], ["CONTACT", "cont"], ["TEAM", "#k3"]];
 
 (function() {
   var a = document.querySelectorAll(".navl");
 
   for (var i of a) {
 
-    for (var y of bn.x) {
+    for (var y of bn) {
       var c = document.createElement("a");
       c.innerText = y[0];
+      c.href = y[1];
       i.appendChild(c);
     }
   }
@@ -29,10 +30,10 @@ function nav(a) {
 (function() {
 
   var b = document.querySelector("#navc>div");
-  for (var i = 0; i < bn.x.length; i++) {
+  for (var i = 0; i < bn.length; i++) {
     var c = document.createElement("a");
-    c.href = bn.x[i][1];
-    c.innerText = bn.x[i][0];
+    c.href = bn[i][1];
+    c.innerText = bn[i][0];
     c.style.transition = "transform 1s ease "+i/4+"s, color 2s ease 0s";
     c.onclick = function () {
       nav(this);
