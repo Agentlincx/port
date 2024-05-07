@@ -52,22 +52,48 @@ function nav(a) {
 })();
 
 
-(function(){
-  var b = ["Develop", "Freelance", "Program", "Manage", "Create", "Build", "Innovate"];
-  
-  var a = document.querySelector("#lst");
-  var pos = 0;
-  
-  (function arr(){
-    if(pos>=b.length){
-      pos = 0;
+
+(function typea() {
+  var i = 0;
+  var ii = 0;
+  var check = 0;
+  var speed = 10;
+  var q = '';
+  var arr = ["Develop", "Freelance", "Program", "Manage", "Create", "Build", "Innovate"];
+
+  (function typeWriter() {
+    var txt = arr[ii];
+    if (i < txt.length && check < 1) {
+      document.getElementById("lst").innerHTML += txt.charAt(i);
+      i++;
+      if (i >= txt.length) {
+        check = 1;
+        setTimeout(typeWriter, 4000);
+      } else {
+        setTimeout(typeWriter, speed);
+      }
+    } else {
+      if (check > 0) {
+        q = document.querySelector('#lst').innerHTML;
+        i--;
+        document.querySelector('#lst').innerHTML = document.querySelector('#lst').innerHTML.substr(0, i);
+        if (q.length == 0) {
+          check = 0;
+          if (ii >= arr.length-1) {
+            ii = 0;
+          } else {
+            ii++;
+          }
+          setTimeout(typeWriter, speed);
+        } else {
+          setTimeout(typeWriter, speed);
+        }
+      }
     }
-    a.innerText = b[pos];
-    pos++
-    setTimeout(arr, 6000);
   })();
-  
+
 })();
+
 
 
 
@@ -114,7 +140,7 @@ function nav(a) {
 })();
 */
 
-var adm = [["0", "./img/xav.jpg", "Wisdom Jason", "Dev at Ace inc", "Developer, programmer", [["fab", "facebook", "https://www.facebook.com/wisdom.jason.0"], ["fas", "paper-plane", "https://t.me/wizzzd0m"], ["fas", "envelope", "mailto:wisdomjason0@gmail.com"], ["fab", "whatsapp", "https://wa.me/+2348123413704"]]], ["1", "./img/mav.jpg", "Marvel Ezeocha", "Admin at Bullish shill team", "Graphics designer, Crypto specialist", []], ["2", "./img/jud.jpg", "Judith Ivy", "Owner of ivy's fashion house", "Content creator", [[]]]];
+var adm = [["0", "./img/xav.jpg", "Wisdom Jason", "Dev at Ace inc", "Developer, programmer", [["fab", "facebook", "https://www.facebook.com/wisdom.jason.0"], ["fas", "paper-plane", "https://t.me/wizzzd0m"], ["fas", "envelope", "mailto:wisdomjason0@gmail.com"], ["fab", "whatsapp", "https://wa.me/+2348123413704"]]], ["1", "./img/mav.jpg", "Marvel Ezeocha", "Admin at Bullish shill team", "Graphics designer, Marketer", []], ["2", "./img/jud.jpg", "Judith Ivy", "Designer at Ace inc", "Ghost-writer, Graphics designer", [[]]]];
 
 (function(){
   var a = document.querySelector("#k3>div:nth-child(2)");
@@ -201,7 +227,7 @@ function cls(){
 
 //carousel
 (function car() {
-  var carw = [["../img/bith.jpg", "http://bithaven.net"], ["../img/shil.jpg", ""], ["../img/pay.jpg", "http://bithaven.net"], ["../img/proj.jpg", "http://bithaven.net"]];
+  var carw = [["./img/bith.jpg", "https://bithaven.net"], ["./img/shil.jpg", "https://aceshill netlify.app"], ["./img/pay.jpg", "https://bithaven.net"], ["./img/proj.jpg", "https://bithaven.net"], ["./img/dolph.jpg", "https://dolphtoken.xyz"]];
 
   var c = document.querySelector('#k5>div:nth-of-type(3)');
   var a = document.querySelector('#caur');

@@ -351,17 +351,16 @@ a {
   white-space: nowrap;
   overflow: hidden;
   font-family: sof;
-  animation: lst 3s steps(500, end) 3s infinite alternate;
-  text-shadow: 1px 0px #fff, -1px 0px #fff, 0 1px #fff, 0 -1px #fff;
+  text-shadow: 2px 0px #fff;
 }
 
-#lst::after{
+#lst::after {
   content: "|";
   color: #000;
   font-size: 100%;
   animation: blk 0.5s linear 0s  infinite;
 }
-
+/*
 @keyframes lst {
   0% {
     width: 100%;
@@ -373,6 +372,7 @@ a {
     width: 0%;
   }
 }
+*/
 
 @keyframes blk{
   0%{
@@ -394,7 +394,7 @@ a {
 
 #k1>div:first-child>div:nth-child(5)>a{
   display: inline-block;
-  padding: 10px;
+  padding: 10px 20px;
   font-size: 1.3em;
   border: 1px solid #ffffffbb;
   border-radius: 10px;
